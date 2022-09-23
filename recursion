@@ -1,0 +1,43 @@
+#Fibonacci Series
+n=int(input())
+a=-1
+b=1
+for i in range(1,n+1):
+    c=a+b
+    print(c,end=' ')
+    a=b
+    b=c
+    
+    
+    #Odd or Even
+    num=int(input())
+if(num % 2==0):
+    print("even!")
+else:
+    print("odd!")
+    
+    
+    #Factorial
+    n=int(input())
+fact=1
+for i in range(1,n+1):
+    fact=fact*i 
+print(fact)
+
+
+#LCM of two numbers
+a=int(input())
+b=int(input())
+if a<b:
+    small=a
+else:
+    small=b
+for i in range(small,0,-1):
+    if(small%a==0 and small%b==0):
+        break
+lcm=(a*b)//i
+print(lcm)
+
+
+
+#
