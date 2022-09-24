@@ -10,13 +10,15 @@ for i in range(0,n):
     
     
     #Odd or Even
-    num=int(input())
-if(num % 2==0):
-    print("even!")
-else:
-    print("odd!")
-    
-    
+   def fun(a):
+    if a%2==0:
+        print("even!")
+    else:
+        print("odd!")
+a=int(input())
+fun(a)
+
+
     #Factorial
   def fact(n):
     if n==0 or n==1:
