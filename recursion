@@ -1,12 +1,12 @@
 #Fibonacci Series
+def fib(n):
+    if n<=1:
+        return n
+    else:
+        return fib(n-1)+fib(n-2)
 n=int(input())
-a=-1
-b=1
-for i in range(1,n+1):
-    c=a+b
-    print(c,end=' ')
-    a=b
-    b=c
+for i in range(0,n):
+    print(fib(i))
     
     
     #Odd or Even
@@ -18,11 +18,13 @@ else:
     
     
     #Factorial
-    n=int(input())
-fact=1
-for i in range(1,n+1):
-    fact=fact*i 
-print(fact)
+  def fact(n):
+    if n==0 or n==1:
+       return 1
+    else:
+       return n*fact(n-1)
+n=int(input())
+print(fact(n))
 
 
 #LCM of two numbers
